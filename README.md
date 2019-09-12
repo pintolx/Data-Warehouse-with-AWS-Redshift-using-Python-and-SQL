@@ -7,11 +7,11 @@ After the ETL process is complete and evaluation is done, the clusters can be de
 This is the configuration file it it contains connection details that help us connect to the AWS Redshift cluster.
 ## sql_queries.py
 This file contains the configuration setup which uses the dwh.cfg file to connect to the AWS Redshift cluster.
-## DROP TABLES
+## Drop Tables
 This section contains queries that would help us drop tables if they already exist
 ## CREATE TABLES
 This section contains queries that are used to create tables in the database. We structured the data warehouse in a star schema with one fact table and four dimension tables. The fact table was called songplays and the dimension tables are users, songs, artists, time
-## STAGING TABLES
+## Staging Tables
 The data is initially stored in two staging tables that include staging_songs and staging_events, this is where the data is stored first before it is transfered into the tables.
 ## Insert Statements
 We use these statements to select data from the staging tables and ingest it into the fact and dimension tables
